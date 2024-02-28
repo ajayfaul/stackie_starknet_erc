@@ -35,3 +35,38 @@ sierra: 1.3.0
 ```
 
 Sierra is an intermediary representation layer that will offer greater long-term stability for Cairo programs.
+
+To create your first Cairo program, run on any directory of your choice with the following commands.
+
+```other
+scarb new try_stark
+cd try_stark
+```
+
+We just created a new folder called quest_one using `scarb new try_stark`. Then we changed our current working directory to **try_stark**.
+
+The folder contains a **src** folder which houses all your project files. **Scarb.toml** manages dependencies that you can use in your program.
+
+**Installing Starkli**
+
+Starkli is a Starknet CLI used for declaring, deploying and interacting with deployed contracts. It is also used to get Starknet data such as block information, transaction details and more.
+
+First, we want to install **Starkliup**, the installer for the Starkli environment. Enter the following command in your terminal.
+
+```other
+curl https://get.starkli.sh | sh
+```
+
+Following the output of the installation, open a new terminal and enter the following command to run the installer. ⚠️ If you receive the error message `starkliup: command not found`, do ensure you followed the instructions thus far.
+
+```other
+starkliup
+```
+
+You can then verify the successful installation using the following command.
+
+```other
+starkli --version
+```
+
+---
